@@ -1,0 +1,18 @@
+project_name: "QuerySense V1"
+version: 1.0
+
+intents:
+  - "product_search"
+  - "problem_solving"
+  - "comparison"
+  - "recommendation"
+  - "information_question"
+
+paths:
+  model_dir: "models"
+  model_name: "intent_model.pkl"
+  vectorizer_name: "vectorizer.pkl"
+
+preprocessing:
+  lowercase: true
+  remove_special_chars: true
