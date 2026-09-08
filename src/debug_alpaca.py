@@ -4,7 +4,7 @@ import os
 alpaca_path = 'data/alpaca_raw.parquet'
 
 if os.path.exists(alpaca_path):
-    print(f"--- Checking {alpaca_path} ---")
+    print(f" Checking {alpaca_path} ---")
     try:
         df = pd.read_parquet(alpaca_path)
         
