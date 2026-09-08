@@ -26,7 +26,6 @@ def main():
     
     df = pd.DataFrame(training_data, columns=['text', 'intent'])
 
-
     print(f"--- Starting {config['project_name']} Training ---")
     df['text'] = df['text'].apply(preprocessor.clean)
     classifier.train(df['text'], df['intent'])
