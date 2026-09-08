@@ -12,7 +12,7 @@ class IntentClassifier:
         self.vec_path = os.path.join(self.model_dir, "vectorizer.pkl")
         
         self.fe = FeatureExtractor()
-        self.model = LogisticRegression(C=1.0, solver='liblinear', multi_class='ovr')
+        self.model = LogisticRegression(C=1000.0, solver='liblinear', multi_class='ovr')
         
         if not os.path.exists(self.model_dir):
             os.makedirs(self.model_dir)
