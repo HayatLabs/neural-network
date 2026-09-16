@@ -22,7 +22,7 @@ Relevant Results
 
 ## Development Roadmap
 
-### V1 — Classical NLP
+### V1 — Classical NLP  ( currently )
 
 Start without large language models.
 
